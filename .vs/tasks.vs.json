@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "tarefa-tensoes",
+      "appliesTo": "trabalho/1khz/tensoes.csv",
+      "type": "launch"
+    }
+  ]
+}

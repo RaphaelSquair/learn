@@ -48,9 +48,9 @@ busca de hiperparametros:
 
 #data =pd.read_csv("lowres.csv",sep=",")
 #data =pd.read_csv("newdata.csv",sep=";")
-
-tensoes =pd.read_csv("1khz/tensoes.csv",sep=",")
-correntes = pd.read_csv("1khz/correntes.csv",sep=",")
+#"1khz/tensoes.csv",sep=","
+tensoes =pd.read_csv("trabalho/1khz/tensoes.csv",sep=",");
+correntes = pd.read_csv("trabalho/1khz/correntes.csv",sep=",")
 
 res =10             #best 10
 window_size = 5    #best 5
