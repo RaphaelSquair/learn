@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\trabalho"
+    "\\trabalho",
+    "\\trabalho\\serialreading"
   ],
+  "SelectedNode": "\\usb_data_receiver.py",
   "PreviewInSolutionExplorer": false
 }

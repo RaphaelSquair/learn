@@ -5,6 +5,11 @@
       "taskLabel": "tarefa-tensoes",
       "appliesTo": "trabalho/1khz/tensoes.csv",
       "type": "launch"
+    },
+    {
+      "taskLabel": "tarefa-regressionwisard",
+      "appliesTo": "/",
+      "type": "launch"
     }
   ]
 }
