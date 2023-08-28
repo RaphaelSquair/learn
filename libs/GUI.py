@@ -12,7 +12,10 @@ port_names = [port.device for port in ports]
 
 # Create a dropdown menu with the available ports
 port_var = tk.StringVar()
-port_var.set(port_names[0])
+try:
+    port_var.set(port_names[0])
+except:
+    port_var.set('COM3')
 port_dropdown = tk.OptionMenu(root, port_var, *port_names)
 port_dropdown.pack()
 

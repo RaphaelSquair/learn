@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import serial
 from dataclasses import dataclass
 
-ser = serial.Serial(port = "COM7",baudrate = 115200 ,timeout=1,bytesize=8, stopbits=serial.STOPBITS_ONE)
+ser = serial.Serial(port = "COM7",baudrate = 4000000 ,timeout=1,bytesize=8, stopbits=serial.STOPBITS_ONE)
 
 data = ""                           # Used to hold data coming over UART
 icarga_a=0
@@ -94,7 +94,7 @@ while(1):
         # Read data out of the buffer until a carraige return / new line is found
         c = ser.read(15)        # read up to ten bytes (timeout)
         # Print the contents of the serial data
-        print (c)
+        #print (c)
 
         Tx1_1=c[0];
         Tx1_2=c[1];
@@ -125,8 +125,8 @@ while(1):
         input_IO.ID=((c[14]>>3)&0X1);
         input_IO.IE=((c[14]>>4)&0X1);
 
-        print(Tx1_1)
-        print(Tx1_AD)
+        #print(Tx1_1)
+        #print(Tx1_AD)
 
         vcplint=Tx1_AD ;
         irefint=Tx2_AD ;
